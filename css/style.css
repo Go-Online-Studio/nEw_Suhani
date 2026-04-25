@@ -60,12 +60,18 @@ section,main{
 .text-primary { color: var(--primary); }
 .bg-primary { background: var(--primary); }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: 50px; font-size: .95rem; font-weight: 600; transition: var(--transition); letter-spacing: .02em; }
-.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary { background: var(--primary); color: #fff; border-color: var(--primary-dark) !important; }
 .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-check:checked+.btn.btn-primary, .btn.btn-primary.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn.btn-primary:active {
+    background-color: var(--primary-dark);
+}
 .btn-outline { border: 2px solid var(--primary); color: var(--primary); }
 .btn-outline:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
 .btn-white { background: #fff; color: var(--primary); }
 .btn-white:hover { background: var(--bg); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-check:checked+.btn.btn-white, .btn.btn-white.active, .btn.btn-white.show, .btn.btn-white:first-child:active, :not(.btn-check)+.btn.btn-white:active {
+    background-color: var(--bg);
+}
 .section-label { display: inline-block; font-size: .8rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--primary); background: rgba(139,94,60,.1); padding: 6px 18px; border-radius: 50px; margin-bottom: 14px; }
 .circle-btn { width: 46px; height: 46px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; transition: var(--transition); flex-shrink: 0; }
 .circle-btn:hover { background: var(--primary-dark); transform: scale(1.1); }
