@@ -1,0 +1,143 @@
+ROLE & OBJECTIVE:
+Act as an expert frontend developer and UI/UX designer. Your task is to generate a complete, responsive, single-page website layout (HTML, CSS, Vanilla JS) for a manufacturing business. The design must closely mirror the clean, modern, and premium aesthetic of the "Crafter" woodworking template from ThemeForest. 
+
+BUSINESS CONTEXT:
+- Business Name: Suhani Industries
+- Niche/Industry: CNC Machining, 3D Wood Carving, 2D Carving, Metal Works, Custom Fabrication, Wave Boards, Wooden Legs.
+- Vibe: Industrial excellence, precision manufacturing, premium craftsmanship.
+
+DESIGN & ANIMATION RULES (CRITICAL):
+- Vibe: Clean grid layouts, ample whitespace, high-quality image placeholders.
+- Animation: DO NOT USE GSAP. Use AOS (Animate On Scroll) initialized with `{ once: true, duration: 800, easing: 'ease-out-cubic', offset: 100 }`. Use smooth CSS transitions for hover effects.
+- Iconography: Use Iconify for all UI accents and process steps.
+
+GLOBAL CSS & STYLING CONSTRAINTS:
+- Image Handling: Must include `img { width: 100%; height: auto; display: block; }` to ensure universal responsiveness.
+- Typography: Include `a { text-decoration: none; }` and `textarea { resize: none; }`. Use `clamp()` for fluid typography that scales smoothly between mobile and desktop.
+- Brand Identity: Use a dummy placeholder for the brand logo: `https://placehold.co/200x80?text=Logo`.
+- Theme Colors: Define a CSS variable system (e.g., `--primary`, `--dark`, `--text-light`) based on a professional industrial palette.
+- Responsive Spacing: Use max-width media queries (991px, 767px, 575px) to adjust section padding and absolute-positioned elements. Use proper responsive section spacers and margin/padding.
+
+JAVASCRIPT & CORE ARCHITECTURE LOGIC:
+The site must integrate logic for dynamic components (to emulate `critical.js` and `script.js` architecture):
+1. Dynamic Nav & Footer: Structure the HTML so that navigation and footer can easily be injected via JS. 
+2. Dynamic Utilities: Include a Back-to-Top button that appears on scroll, and a global floating WhatsApp button.
+3. Device Detection: Implement a debounce/resize event listener to check for mobile vs. desktop to route WhatsApp links correctly (`wa.me` for mobile vs `web.whatsapp.com` for desktop).
+
+SECTION-BY-SECTION REQUIREMENTS: 
+
+1. Header / Navigation:
+- Implement a Bootstrap Offcanvas navbar for mobile.
+- Include a background color transition effect when scrolling past 100px.
+- Must include a Dropdown menu for "Services" (3D Carving, 2D Carving, Wave Board, Metal CNC).
+- Set specific CSS properties for the brand logo to prevent layout shifts:
+  `--nav-height: max(65px, calc(var(--brand-height) + 16px));`
+  `.navbar-brand { height: var(--brand-height); padding: 0; }`
+  `.navbar-brand img { height: 100%; width: auto; }`
+
+2. Hero Section (Non-Shrinking Banner):
+- Create a fade-up entrance animation for the title and text.
+- Must use a Swiper carousel for the background/content.
+- CSS Constraints: Must use `min-height: calc(100vh - var(--nav-height))` and `height: auto`. The content within the banner must never shrink below its own height on mobile; it must expand the container vertically to prevent text cut-off.
+- Pagination: Custom style the Swiper pagination dots to match the `--primary` color. Active dots must be elongated (pill-shaped) with 100% opacity.
+
+3. Services Section (Grid Layout):
+- Clean, premium grid layout with image cards.
+- Add "Order/Book Now" buttons on each service card.
+- Interaction: Clicking "Book Now" must trigger a JavaScript handler that opens a pre-filled WhatsApp message specifically mentioning that service item (using the device-aware routing mentioned above).
+
+4. Showcase / Gallery Section:
+- Clean image galleries with smooth CSS hover effects (e.g., slight scale or overlay text).
+- Structure the gallery items to be compatible with an external lightbox library like Fancybox.
+
+5. Testimonials Section:
+- Create a sliding carousel using Swiper.js.
+- Clean card design with author name, role, and a quote.
+
+6. Contact & WhatsApp Integration Form:
+- Create a functional-looking form with Bootstrap UI components and validation (`needs-validation`).
+- Include UI warnings and success notifications for user inputs.
+- Form Action: Write a JavaScript handler that captures form inputs (Name, Service required, Message) and opens a WhatsApp API link with a formatted, pre-filled message using global config number `919898011309`.
+
+
+
+
+
+
+
+
+
+ROLE & OBJECTIVE:
+Act as an expert frontend developer and UI/UX designer. Your task is to generate a complete, responsive, multi-page website (HTML, CSS, Vanilla JS) for a manufacturing business. The design must be an EXACT structural and visual clone of the "Crafter"(https://preview.themeforest.net/item/crafter-carpentry-woodworking-elementor-template-kit/full_screen_preview/60733887) woodworking template from ThemeForest, but customized for "Suhani Industries".
+
+BUSINESS CONTEXT & COPY:
+- Business Name: Suhani Industries
+- Niche: CNC Machining, 3D Wood Carving, 2D Carving, Metal Works, Custom Fabrication, Wave Boards, Wooden Legs.
+
+GLOBAL VISUAL & STYLING RULES (MATCHING 'CRAFTER' THEME):
+- Color Palette: Earthy and premium. Use a primary brand color of warm, earthy brown/bronze, set against off-white/cream backgrounds (`#F9F9F9` or similar) for soft contrast. Pure white (`#FFFFFF`) for cards.
+- Shapes & Borders: Heavy use of rounded corners. All images, cards, and buttons should have a distinct `border-radius` (e.g., 12px to 24px depending on the element size).
+- Typography: Clean, modern sans-serif. Headings should be bold and tightly tracked. Use `clamp()` for fluid typography that scales smoothly between mobile and desktop.
+- Whitespace: Use generous padding (e.g., `py-5`, `gap-4`) between sections and grid items to create a breathable, premium feel.
+
+GLOBAL CSS & TECHNICAL CONSTRAINTS:
+- Image Handling: Must include `img { width: 100%; height: auto; display: block; }` to ensure responsiveness.
+- Link/Form Styling: `a { text-decoration: none; }` and `textarea { resize: none; }`.
+- Brand Identity: Use a dummy placeholder for the brand logo: `https://placehold.co/200x80?text=Logo`.
+- Animation: DO NOT USE GSAP. Use AOS (Animate On Scroll) initialized with `{ once: true, duration: 800, easing: 'ease-out-cubic', offset: 100 }`. Use smooth CSS transitions for hover effects.
+- Iconography: Use Iconify for all UI accents and process steps.
+
+JAVASCRIPT & CORE ARCHITECTURE LOGIC:
+1. Dynamic Nav & Footer: Structure HTML so navigation and footer can easily be injected via JS. 
+2. Dynamic Utilities: Include a Back-to-Top button that appears on scroll, and a global floating WhatsApp button.
+3. Device Detection: Implement a debounce/resize event listener to check for mobile vs. desktop to route WhatsApp links correctly (`wa.me` for mobile vs `web.whatsapp.com` for desktop). Global config number is `919898011309`.
+
+EXACT SECTION-BY-SECTION BLUEPRINT:
+
+1. Header / Navigation:
+- Layout: Logo on the left, center-aligned nav links, right-aligned phone number with icon, and a solid primary-color "Get Quote" button.
+- Mobile: Bootstrap Offcanvas navbar.
+- Dropdown: Include a dropdown menu for "Services" (3D Carving, 2D Carving, Wave Board, Metal CNC).
+- Scrolling: Background color transitions from transparent to solid white on scroll.
+- Specific CSS: 
+  `--nav-height: max(65px, calc(var(--brand-height) + 16px));`
+  `.navbar-brand { height: var(--brand-height); padding: 0; }`
+  `.navbar-brand img { height: 100%; width: auto; }`
+
+2. Hero Section (Non-Shrinking Banner):
+- Visuals: Full-width dark-overlay background image of a manufacturing/CNC process. Left-aligned text block.
+- Content: Large, bold, multi-line headline (e.g., "Expert CNC & Carving Services"). Subtext below. 
+- Buttons: Two primary call-to-action buttons side-by-side (replace the video play button from the theme with a "View Services" button).
+- CSS Constraints: Must use `min-height: calc(100vh - var(--nav-height))` and `height: auto`. Content must expand vertically on mobile to prevent text cut-off.
+
+3. Services Showcase (3-Column Grid):
+- Visuals: Centered section label ("Our Work") and Title ("Wooden Showcase").
+- Grid: 3 columns on desktop, 1 on mobile. 
+- Card Design: White background, highly rounded corners. Top half is a rounded image. Bottom half contains a bold title, short grey description text, a bottom-left category label, and a bottom-right circular arrow icon.
+- Interaction: Clicking the arrow/card triggers the dynamic WhatsApp script pre-filled with the specific service name.
+
+4. Bento-Box Feature Grid:
+- Visuals: An asymmetrical grid of 3 images with rounded corners.
+- Layout: One large vertical image on the left. Two smaller horizontal images stacked on the right. 
+- Detail: The bottom right image should feature an overlapping neon/bright label or badge.
+
+5. Customer Review (Testimonials):
+- Visuals: Centered layout. Large, light-grey quotation mark icon in the background. 
+- Content: 5-star rating icons, large bold review text, followed by a small circular user avatar, name, and role.
+- Carousel: Use Swiper.js for sliding. Custom style the pagination dots to match the primary color (active dot is pill-shaped with 100% opacity).
+
+6. Floating Feature Banner (Custom Woodwork & Repairs):
+- Visuals: Full-width background image. Overlapping the bottom center is a wide, white, rounded card with a drop shadow.
+- Card Content: A small overlapping image at the top center of the card. Below it, a section title, and a 3-column row featuring icons and short text (e.g., Materials, Accuracy, Warranty).
+
+7. Process / Tailored Services List:
+- Layout: Left column has the section title and a short paragraph. Right column has a vertical list of 4 items.
+- Item Design: Each row has a large, light-grey number (01, 02, etc.), a square rounded image, a title, subtext, and a right-aligned circular arrow button.
+
+8. CTA Banner & Footer:
+- CTA Section: A large, rounded rectangular background image with a dark overlay, containing white text ("Ready to Build? Let's Begin") and a white CTA button.
+- Footer Layout: 4 columns. 
+  - Col 1: Logo, short bio, social icons.
+  - Col 2 & 3: Quick links and Services links.
+  - Col 4: Contact info (address, phone, email) with icons.
+- Include a bottom copyright bar.

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Suhani Industries – Get a Free Quote</title>
+  <meta name="description" content="Get in touch with Suhani Industries for CNC machining, 3D wood carving, wave boards and metal fabrication. Request a free quote today.">
+  <link rel="icon" href="images/Fevicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar"></nav>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu"></div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <img src="images/HomeGallery/precision_metal_parts.jpg" alt="Contact Suhani Industries" class="page-hero-bg" loading="eager">
+  <div class="hero-overlay"></div>
+  <div class="page-hero-content" data-aos="fade-up">
+    <div class="section-label">Get In Touch</div>
+    <h1>Contact Us</h1>
+    <p>Have a project in mind? Reach out for a free consultation and custom quote — we typically respond within 24 hours.</p>
+  </div>
+</section>
+<div class="breadcrumb-bar">
+  <div class="container">
+    <a href="index.html">Home</a><span>/</span><span class="current">Contact</span>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section class="section-pad" style="background:var(--bg);">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Contact Info -->
+      <div data-aos="fade-right">
+        <div class="section-label">Reach Out</div>
+        <h2>Let's Discuss Your Project</h2>
+        <p style="margin-bottom:32px;">Whether you need a single prototype or a bulk production run — we're here to help. Choose any channel below or fill out the form.</p>
+
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon"><iconify-icon icon="tabler:map-pin" width="22"></iconify-icon></div>
+            <div>
+              <h4>Visit Our Workshop</h4>
+              <p>C 26, Anur Estate, opp MM Vora Show Room, Soma Talav Cross Road, Vadodara, Gujarat</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><iconify-icon icon="tabler:phone" width="22"></iconify-icon></div>
+            <div>
+              <h4>Call Us</h4>
+              <a href="tel:+919898011309">+91 98980 11309</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><iconify-icon icon="tabler:mail" width="22"></iconify-icon></div>
+            <div>
+              <h4>Email Us</h4>
+              <a href="mailto:suhaniindustries09@gmail.com">suhaniindustries09@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><iconify-icon icon="tabler:clock" width="22"></iconify-icon></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form-wrap" data-aos="fade-left">
+        <h3>Send Us a Message</h3>
+        <p>Fill in the details below and we'll get back to you shortly.</p>
+        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-control-crafter" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number</label>
+              <input type="tel" id="contactPhone" class="form-control-crafter" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" class="form-control-crafter" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="contactService">Service Interested In</label>
+            <select id="contactService" class="form-control-crafter">
+              <option value="">Select a service</option>
+              <option value="3D Wood Carving">3D Wood Carving</option>
+              <option value="2D CNC Carving">2D CNC Carving</option>
+              <option value="Wave Board">Wave Board Design</option>
+              <option value="Metal CNC">Metal CNC Work</option>
+              <option value="Wooden Legs">Wooden Legs & Turnings</option>
+              <option value="Custom Fabrication">Custom Fabrication</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Project Details</label>
+            <textarea id="contactMessage" class="form-control-crafter" placeholder="Describe your project requirements, dimensions, materials, quantity..." rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-crafter w-100 justify-content-center">
+            <iconify-icon icon="tabler:send" width="18"></iconify-icon> Send via WhatsApp
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section class="section-pad-sm" style="background:#fff;">
+  <div class="container">
+    <div class="section-header center" data-aos="fade-up">
+      <div class="section-label">Find Us</div>
+      <h2>Our Location</h2>
+    </div>
+    <div class="map-section" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.3!2d73.1815!3d22.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5e7!2sSuhani+Industries!5e0!3m2!1sen!2sin!4v1700000000000"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Suhani Industries Location">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="footer-section"></footer>
+
+<a href="#" id="whatsapp-float" aria-label="Chat on WhatsApp">
+  <iconify-icon icon="ic:baseline-whatsapp" width="30"></iconify-icon>
+</a>
+<button id="backToTop" aria-label="Back to top">
+  <iconify-icon icon="tabler:arrow-up" width="20"></iconify-icon>
+</button>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/critical.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Contact form → WhatsApp redirect
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('contactName').value.trim();
+    const phone = document.getElementById('contactPhone').value.trim();
+    const email = document.getElementById('contactEmail').value.trim();
+    const service = document.getElementById('contactService').value;
+    const message = document.getElementById('contactMessage').value.trim();
+
+    let text = `Hi! I'm ${name}.`;
+    if (service) text += `\nService: ${service}`;
+    if (email) text += `\nEmail: ${email}`;
+    if (phone) text += `\nPhone: ${phone}`;
+    if (message) text += `\nDetails: ${message}`;
+
+    const waNumber = '919898011309';
+    const encoded = encodeURIComponent(text);
+    const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+    const url = isMobile
+      ? `https://wa.me/${waNumber}?text=${encoded}`
+      : `https://web.whatsapp.com/send?phone=${waNumber}&text=${encoded}`;
+    window.open(url, '_blank', 'noopener');
+  }
+</script>
+</body>
+</html>
