@@ -133,7 +133,7 @@ background: var(--primary-dark); transform: translateY(-2px); box-shadow: var(--
    ======================================== */
 #hero {
   position: relative;
-  min-height: calc(100vh - var(--nav-height));
+  min-height: 100vh;
   height: auto;
   display: flex; align-items: center;
   background: url('../images/hero_bg.png') center/cover no-repeat;
