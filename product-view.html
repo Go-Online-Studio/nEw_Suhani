@@ -58,10 +58,15 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
     </div>
 
+    <section class="page-hero">
+        <img src="images/HomeGallery/wave_border_design.jpg" alt="Gallery" class="page-hero-bg" loading="eager">
+        <div class="hero-overlay"></div>
+        <div class="page-hero-content aos-init aos-animate" data-aos="fade-up">
+            <h2 class="h1 text-white">Product Details</h2>
+        </div>
+    </section>
 
-    <div style="height: var(--nav-height);"></div>
-
-    <section class="section_padding prodDescSec">
+    <section class="section-pad pt-4 prodDescSec">
         <div class="container">
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
@@ -98,7 +103,7 @@
                             <span class="label-text" id="prodCategory"></span>
                         </div>
 
-                        <h1 id="prodName" class="section-title">
+                        <h1 id="prodName" class="section-title  h2">
                             ENGINEERING <span class="neon-text">PRECISION</span><br>
                             INTO EVERY CUT
                         </h1>
@@ -108,7 +113,7 @@
                             </p>
                         </div>
 
-                        <div class="d-grid gap-2 d-md-flex mb-5">
+                        <div class="gap-2 d-flex flex-wrap mb-5">
                             <a id="whatsappBtn" href="#" target="_blank" class="btn-service justify-content-center">
                                 <i class="bi bi-whatsapp me-2"></i> Get Quote
                             </a>
@@ -133,7 +138,7 @@
                             <h4 class="text-uppercase text_brand mb-3" style="font-family: 'Rajdhani';">
                                 Description
                             </h4>
-                            <p id="prodFullDesc" class="text_brand" style="line-height: 1.8;">
+                            <p id="prodFullDesc" style="line-height: 1.8;">
                                 ...
                             </p>
                         </div>
@@ -159,6 +164,11 @@
     <a href="#" class="back-to-top" id="backToTop">
         <i class="bi bi-chevron-up"></i>
         <span class="progress-ring"></span>
+    </a>
+    
+    <!-- Floating WhatsApp -->
+    <a href="#" id="whatsapp-float" aria-label="Chat on WhatsApp">
+      <iconify-icon icon="ic:baseline-whatsapp" width="30"></iconify-icon>
     </a>
 
     <!-- Scripts -->

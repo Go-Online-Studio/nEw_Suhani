@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li><a class="dropdown-item" href="product-view.html?id=metal-cnc">Metal CNC</a></li>
                     </ul>
                 </li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>

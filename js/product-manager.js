@@ -122,7 +122,7 @@ function loadProduct(data) {
         featuresList.innerHTML = data.features.map(f => `
             <li class="col-md-6 d-flex align-items-center mb-2">
                 <i class="bi bi-caret-right-fill colorMain me-2"></i>
-                <span class="text-light small text-uppercase">${f}</span>
+                <span class="brandText small text-uppercase">${f}</span>
             </li>
         `).join('');
     }
