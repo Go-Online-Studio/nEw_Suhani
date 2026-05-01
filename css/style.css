@@ -273,7 +273,7 @@ background: var(--primary-dark); transform: translateY(-2px); box-shadow: var(--
    ======================================== */
 .footer-section { background: #1a1410; color: rgba(255,255,255,.7); }
 .footer-top { padding: 80px 0 48px; }
-.footer-brand .brand-wrapper img { height: 44px; width: auto; margin-bottom: 18px; }
+.footer-brand .brand-wrapper img { height: 90px; width: auto; margin-bottom: 18px; }
 .footer-brand .brand-wrapper.large img { filter: brightness(0) invert(1); }
 .footer-desc { font-size: .9rem; line-height: 1.7; margin-bottom: 22px; color: rgba(255,255,255,.6); }
 .footer-section .social-links { display: flex; gap: 10px; }
@@ -442,13 +442,13 @@ textarea.form-control-crafter { min-height:140px; resize:none; }
    .footer-section{
       text-align: center;
    }
+   .footer-brand .brand-wrapper img {
+    height: 140px;
+}
    .footer-brand .brand-wrapper{
      max-width: fit-content;
      margin-left: auto;
      margin-right: auto;
-   }
-   .footer-brand .brand-wrapper img{
-    height: 76px;
    }
    .social-links{
       justify-content: center;

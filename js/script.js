@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="col-lg-4" data-aos="fade-up">
                         <div class="footer-brand">
                             <div class="brand-wrapper large">
-                                <img src="images/BrandLogo.webp" alt="Suhani Industries">
+                                <img src="images/Suhani.svg" alt="Suhani Industries">
                             </div>
                             <p class="footer-desc">
                                 Leading manufacturer of precision CNC wood and metal products. Delivering craftsmanship and engineering excellence since 2010.
