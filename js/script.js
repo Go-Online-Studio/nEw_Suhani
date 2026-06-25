@@ -78,8 +78,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p class="copyright">&copy; <span id="year"></span> Suhani Industries. All Rights Reserved.</p>
-                    <p class="credit">Crafted with <span class="text-primary-crafter">Precision</span></p>
+                    <p class="copyright">&copy; <span id="year"></span> All Rights Reserved By Suhani Industries. Developed and managed by <a href="https://shriiitrackingsolution.in/" class="text-primary-crafter" target="_blank">
+                    <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
+                  </a></p>
                 </div> 
             </div>
         </div>

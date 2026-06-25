@@ -287,7 +287,7 @@ background: var(--primary-dark); transform: translateY(-2px); box-shadow: var(--
 .footer-contact .contact-item i { color: var(--primary); font-size: 1rem; margin-top: 3px; flex-shrink: 0; }
 .footer-contact .contact-item address { font-style: normal; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 22px 0; }
-.footer-bottom-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-bottom-content { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
 .footer-bottom .copyright, .footer-bottom .credit { font-size: .85rem; margin: 0; color: rgba(255,255,255,.5); }
 
 
